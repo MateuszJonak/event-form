@@ -1,11 +1,16 @@
 {
-  "name": "ubs-event-form",
+  "name": "event-form",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.3"
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.3",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.4",
+    "styled-components": "^4.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -14,12 +19,26 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.1",
+    "redux-devtools-extension": "^2.13.7"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "jsxBracketSameLine": true
+  }
 }
