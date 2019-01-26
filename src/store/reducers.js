@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import { eventReducer, REDUCER_NAME as EVENT_REDUCER_NAME } from './event';
+import { formReducer, REDUCER_NAME as FORM_REDUCER_NAME } from './form';
+import { apiReducer, REDUCER_NAME as API_REDUCER_NAME } from './api';
 
 export default combineReducers({
-  [EVENT_REDUCER_NAME]: eventReducer,
+  [FORM_REDUCER_NAME]: formReducer,
+  [API_REDUCER_NAME]: apiReducer,
 });
